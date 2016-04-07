@@ -10,6 +10,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <cstdlib>
+#include <ctime>
 
 #include "Slav.h"
 
@@ -21,7 +22,7 @@ using namespace std;
 
 void showMeContainerSizes(vector <Slav *>, set <Slav *>, map <Slav *, Slav*>);
 void showMeAdapterSizes(queue <Slav *>, stack <Slav *>);
-void showMeResultOfSorting (map <_sex, vector <Slav *>>);
+void showMeResultOfSorting (map <_sex, vector <Slav *> >);
 
 void containers(Slav *, int);
 void adapters(Slav *, int);
@@ -139,7 +140,7 @@ void adapters(Slav * slavs, int n)
 
 void sorting (Slav * slavs, int n)
 {
-	map <_sex, vector <Slav *>> mapOfSex;
+	map <_sex, vector <Slav *> > mapOfSex;
 	printf("# Sorting\n");
 	for (int i = 0; i < n; i++)
 	{
@@ -169,7 +170,7 @@ void showMeAdapterSizes(queue <Slav *> queue, stack <Slav *> stack)
 
 }
 
-void showMeResultOfSorting(map <_sex, vector <Slav *>> mapOfSex)
+void showMeResultOfSorting(map <_sex, vector <Slav *> > mapOfSex)
 {
 	cout << "men: " << endl;
 	for (vector<Slav *>::iterator itr = mapOfSex[male].begin(); itr != mapOfSex[male].end(); itr++)
