@@ -25,8 +25,10 @@ void showMeAdapterSizes(queue <Slav *>, stack <Slav *>);
 void showMeResultOfSorting (map <_sex, vector <Slav *> >);
 
 void containers(Slav *, int);
-void adapters(Slav *, int);
+void adapters(Slav *, int); 
 void sorting(Slav *, int);
+
+
 
 int main(int argc, char const *argv[])
 {
